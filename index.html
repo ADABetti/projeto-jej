@@ -8,6 +8,7 @@
     <!--css -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- ícones bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
@@ -22,7 +23,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img src="./img/LOGO HORIZONTAL - BRANCO.png" style="width: 140px" /> </a>
 
-        <div class="icone-midias" style="color: aliceblue">
+        <div class="icone-midias text-light">
           <i class="bi bi-instagram px-1"></i>
           <i class="bi bi-facebook px-1"></i>
           <i class="bi bi-whatsapp px-1"></i>
@@ -39,89 +40,231 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3500">
-          <img src="https://livo.fbitsstatic.net/media/2023_verao_banners_categoria.jpg" class="d-block w-100" alt="..." />
+          <img src="https://livo.fbitsstatic.net/media/2023_verao_banners_categoria.jpg" class="img-fluid" alt="..." />
         </div>
         <div class="carousel-item" data-bs-interval="3500">
-          <img src="https://livo.fbitsstatic.net/media/2023_verao_banners_categoria.jpg" class="d-block w-100" alt="..." />
+          <img src="https://livo.fbitsstatic.net/media/2023_verao_banners_categoria.jpg" class="img-fluid" alt="..." />
         </div>
         <div class="carousel-item" data-bs-interval="3500">
-          <img src="https://livo.fbitsstatic.net/media/2023_verao_banners_categoria.jpg" class="d-block w-100" alt="..." />
+          <img src="https://livo.fbitsstatic.net/media/2023_verao_banners_categoria.jpg" class="img-fluid" alt="..." />
         </div>
       </div>
     </div>
-    <!-- end of carousel-->
+    <!-- end of carousel -->
 
-    <!-- start of cards -->
-    <div class="container text-center">
-      <h3 class="mb-3 cursive-title mt-5">Moda feminina</h3>
-    </div>
+    <h2 class="mb-3 cursive-title mt-5 text-center">Moda feminina</h2>
 
-    <div class="container bg-light">
-      <div id="carouselCard" class="carousel slide">
-        <div class="carousel-inner carousel-inner-card">
-          <div class="carousel-item carousel-card active">
-            <div class="card text-center">
-              <img src="./img/foto-teste.jpeg" class="d-block img-card" style="width: 13rem" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">Preço $$</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item carousel-card">
-            <div class="card text-center">
-              <img src="./img/foto-teste.jpeg" class="d-block img-card" style="width: 13rem" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">Preço $$</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item carousel-card">
-            <div class="card text-center">
-              <img src="./img/foto-teste.jpeg" class="d-block img-card" style="width: 13rem" ; alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">Preço $$</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item carousel-card">
-            <div class="card text-center">
-              <img src="./img/foto-teste.jpeg" class="d-block img-card" style="width: 13rem" ; alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">Preço $$</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item carousel-card">
-            <div class="card text-center">
-              <img src="./img/foto-teste.jpeg" class="d-block img-card" style="width: 13rem" ; alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">Preço $$</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
-              </div>
+    <!--carousel moda feminina-->
+    <div id="carouselExampleControls" class="carousel">
+      <div class="carousel-inner carousel-inner-card">
+        <div class="carousel-item carousel-item-card active text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCard" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    <!--carousel moda feminina-->
 
-    <!-- end of cards -->
+    <!-- <h2 class="mb-3 cursive-title mt-5 text-center">Moda Masculina</h2> -->
+
+    <!--carousel moda masculina-->
+    <!-- <div id="carouselExampleControls" class="carousel">
+      <div class="carousel-inner carousel-inner-card">
+        <div class="carousel-item carousel-item-card active text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-card text-center">
+          <div class="card">
+            <div class="img-wrapper"><img src="./img/foto-teste.jpeg" class="d-block w-100" alt="..." /></div>
+            <div class="card-body">
+              <h5 class="card-title">Modelo X</h5>
+              <p class="card-text text-success"><strong>R$180.00</strong></p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    <!--carousel moda masculina-->
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
